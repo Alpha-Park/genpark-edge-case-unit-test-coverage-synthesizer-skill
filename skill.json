@@ -1,0 +1,39 @@
+{
+  "name": "genpark-edge-case-unit-test-coverage-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous edge-case unit test suite synthesizer and branch coverage optimizer for software testing pipelines.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "code-synthesis",
+  "tags": [
+    "codiumai",
+    "cover-agent",
+    "test-generator",
+    "pytest",
+    "unit-testing"
+  ],
+  "inputs": {
+    "source_function_code": {
+      "type": "string"
+    },
+    "target_framework": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "test_suite_id": {
+      "type": "string"
+    },
+    "generated_test_cases_count": {
+      "type": "integer"
+    },
+    "projected_branch_coverage_pct": {
+      "type": "number"
+    },
+    "test_suite_artifact_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
